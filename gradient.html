@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>
+gradient linear
+</title>
+<style>
+
+div.one{
+width:500px;
+height:500px;
+border:10px blue solid;
+background-image:linear-gradient(to left,red,green)
+}
+
+div.two{
+width:500px;
+height:500px;
+border:10px yellow solid;
+background-image:repeating-linear-gradient(to right,red ,green 15%,orange 20%);
+}
+
+div.three{
+width:500px;
+height:500px;
+border:10px black solid;
+background-image:radial-gradient(red,green)
+}
+
+div.four{
+width:500px;
+height:500px;
+border:10px purple solid;
+background-image:repeating-radial-gradient(red,green 10%,orange 10%)
+}
+</style>
+</head>
+
+<body>
+<div class="one">  linear gradient</div>
+<div class="two">repeating linear gradient </div>
+<div class="three">radial gradient</div>
+<div class="four">repeating radial gradient</div>
+</body>
+</html>
