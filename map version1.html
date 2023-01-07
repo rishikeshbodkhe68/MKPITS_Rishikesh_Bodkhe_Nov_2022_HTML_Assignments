@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+<pre>
+<script>
+var array=new Array(5);
+document.write("enter 5 numbers");
+
+for(i=0;i<=4;i++)
+{
+var v1=parseInt(prompt("enter"+i+"number"));
+array[i]=v1;
+}
+function map1(x)
+{
+return(x*x);
+}
+
+var res=array.map(map1);
+document.write(" "+res);
+
+
+</script>
+</pre>
+</body>
+</html>
