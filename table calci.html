@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>
+calci
+</title>
+<style>
+
+button{
+background-color:yellow;
+border:solid 3px red;
+
+}
+
+input{
+background-color:green;
+}
+
+button:hover{
+background-color:white;
+
+
+}
+
+
+</style>
+</head>
+<body>
+
+<table border=1 align="center" border-color="black" bgcolor="orange">
+
+
+<tr>
+<td colspan="3"><input type="text" id="result" width="300px" ></input></td>
+<td><button type="button" onclick="clr( )">C</button></td>
+</tr>
+
+<tr align="center">
+<td><button type="button" onclick="view('1')">1</button>
+<td><button type="button" onclick="view('2')">2</button>
+<td><button type="button" onclick="view('3')">3</button>
+<td><button type="button" onclick="view('/')">/</button>
+</tr>
+
+<tr align="center">
+<td><button type="button" onclick="view('4')">4</button>
+<td><button type="button" onclick="view('5')">5</button>
+<td><button type="button" onclick="view('6')">6</button>
+<td><button type="button" onclick="view('-')">-</button>
+</tr>
+
+<tr align="center">
+<td><button type="button" onclick="view('7')">7</button>
+<td><button type="button" onclick="view('8')">8</button>
+<td><button type="button" onclick="view('9')">9</button>
+<td><button type="button"onclick="view('+')">+</button>
+</tr>
+
+<tr align="center">
+<td><button type="button"onclick="view('.')">.</button>
+<td><button type="button"onclick="view('0')">0</button>
+<td><button type="button"onclick="compute('=')">=</button>
+<td><button type="button"onclick="view('*')">*</button>
+</tr>
+
+</table>
+
+<script>
+
+function view(num)
+{
+document.getElementById("result").value+=num;
+}
+
+function compute()
+{
+let x= document.getElementById("result").value;
+let y=eval(x)
+document.getElementById("result").value=y;
+}
+
+function clr()
+{
+document.getElementById("result").value="";
+}
+</script>
+
+</body>
+</html>
